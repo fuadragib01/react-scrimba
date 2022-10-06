@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import Child from "./components/Child";
+import RoundedImg from "./components/RoundedImg";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <RoundedImg src="https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/79877/optimized_large_thumb_stage.jpg" />
+            <Child />
+            <Card cardColor="red" height={200} width={200}></Card>
+            <Card cardColor="yellow" height={100} width={100}></Card>
+            <Card cardColor="green" height={100} width={100}></Card>
+        </div>
+    );
 }
 
 export default App;
